@@ -1,6 +1,7 @@
 # case-study
 
 Approach
+
 I began by evaluating data quality through the following checks:
 
   - Primary Key Integrity: Confirmed that all primary keys are unique.
