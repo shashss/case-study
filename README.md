@@ -20,5 +20,5 @@ Use of AI
 
   - Environment Setup: Used an LLM to assist with executing SQL code within my local IDE, as I am more accustomed to using SQL within Databricks notebooks.
   - Debugging: Leveraged AI to resolve specific errors encountered while querying [Task/Section B3].
-  - Strategy & Review: Used AI to brainstorm and validate my analytical approach, as well as to proofread this documentation.
+  - Strategy & Review: Used AI to brainstorm and validate my analytical approach, as well as to proofread this documentation :)
 
