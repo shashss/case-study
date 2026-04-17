@@ -1,16 +1,24 @@
 # case-study
 
+Approach
+I began by evaluating data quality through the following checks:
 
-Approach:
-I first checked for the quality by exploring the following: 
-  - ensuring the Primary keys are unique
-  - no null values present in any of the columns (delivered_at column do have nulls as the orders that are in transit or lost will not be null, which is expected)
-  - The Created_at date should be earlier than the shipped_at date which should further be earlier than the delivered_at date.
+  - Primary Key Integrity: Confirmed that all primary keys are unique.
+  - Null Value Analysis: Verified that no unexpected null values exist. (Note: The delivered_at column contains nulls for orders currently in transit or lost, which is expected behavior).
+  - Chronological Logic: Validated that created_at precedes shipped_at, which in turn precedes delivered_at.
 
-For the limited amount of time that I had at my disposal, these were some of the checks that I did to ensure the data quality.
+Due to time constraints, these checks served as the baseline to ensure data reliability before proceeding with the analysis.
 
-Findings: 
-  - There are several sellers whose percent of orders delayed is more than 50% - more analysis needs to be done to find the causal variance.
-  - Delivery done via Inhouse has good record of delivering On-time. Among the external vendor carriers, Bluedart seems to deliver better On-time maginally, relative to the other vendors. If I were to continue the analysis, I'd focus on how different geographically each Geo operates and that is causing this difference. I'd also focus on the factors why In-house delivery is clearly ahead in On-time delivery and if it can be replicated for the Vendor side as well.
-  - There is not significant difference in repeat purchase rate based on the Customer's first delivery experience.
+Findings
+
+  - High Delay Rates: Several sellers have a delay rate exceeding 50%. Further analysis is required to identify the root causes of this variance.
+  - Carrier Performance: In-house delivery maintains a strong record for on-time arrivals. Among external vendors, Bluedart shows a marginal lead in on-time performance. If I were to continue this analysis, I would investigate how geographical differences impact performance and explore whether the successful in-house delivery model can be replicated for external vendors.
+  - Customer Retention: There is no significant difference in repeat purchase rates based on a customer's first delivery experience.
+
+
+Use of AI
+
+  - Environment Setup: Used an LLM to assist with executing SQL code within my local IDE, as I am more accustomed to using SQL within Databricks notebooks.
+  - Debugging: Leveraged AI to resolve specific errors encountered while querying [Task/Section B3].
+  - Strategy & Review: Used AI to brainstorm and validate my analytical approach, as well as to proofread this documentation.
 
